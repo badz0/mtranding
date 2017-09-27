@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="44px" viewBox="0 0 36 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>D2FCC293-CE51-44EE-A901-4405BA45C843</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-1.4%" y="-28.1%" width="102.8%" height="156.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="UI_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Jewelry-case-landing" transform="translate(-1332.000000, -18.000000)" fill="#B2B2B2">
+            <g id="Top-menu">
+                <g id="Header" filter="url(#filter-1)">
+                    <path d="M1346.242,40.522 L1347.887,40.522 L1347.887,47.742 C1347.887,47.885 1347.995,48 1348.129,48 L1350.916,48 C1351.05,48 1351.158,47.885 1351.158,47.742 L1351.158,40.556 L1353.049,40.556 C1353.172,40.556 1353.274,40.457 1353.289,40.327 L1353.576,37.669 C1353.584,37.596 1353.562,37.522 1353.516,37.468 C1353.471,37.413 1353.404,37.381 1353.336,37.381 L1351.158,37.381 L1351.158,35.715 C1351.158,35.213 1351.412,34.958 1351.912,34.958 L1353.336,34.958 C1353.469,34.958 1353.577,34.843 1353.577,34.7 L1353.577,32.26 C1353.577,32.118 1353.469,32.002 1353.336,32.002 L1351.374,32.002 C1351.359,32.001 1351.329,32 1351.284,32 C1350.943,32 1349.761,32.071 1348.825,32.988 C1347.79,34.005 1347.933,35.222 1347.969,35.433 L1347.969,37.381 L1346.242,37.381 C1346.108,37.381 1346,37.497 1346,37.64 L1346,40.264 C1346,40.406 1346.108,40.522 1346.242,40.522" id="Fill-60"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

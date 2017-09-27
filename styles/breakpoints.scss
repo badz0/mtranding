@@ -1,0 +1,23 @@
+@mixin breakpoints($media) {
+  @if $media == to479 {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $media == to767 {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == to991 {
+    @media only screen and (max-width: 991px) { @content; }
+  }
+  @else if $media == to1199 {
+    @media only screen and (max-width: 1199px) { @content; }
+  }
+  @else if $media == to1599 {
+    @media only screen and (max-width: 1599px) { @content; }
+  }
+  @else if $media == 480to767 {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == 768to991 {
+    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+}
