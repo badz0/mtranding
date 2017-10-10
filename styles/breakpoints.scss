@@ -20,4 +20,7 @@
   @else if $media == 768to991 {
     @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
   }
+  @else if $media == 768to1199 {
+    @media only screen and (min-width: 768px) and (max-width: 1199px) { @content; }
+  }
 }

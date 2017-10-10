@@ -1,0 +1,202 @@
+@import './breakpoints.scss';
+$bg-grey: #f7f7f7;
+$font-grey: #4a4a4a;
+$font-light-grey: #9b9b9b;
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  &__dd-btn {
+    border: none;
+    background: none;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 5px;
+    padding-right: 25px;
+    color: $font-grey;
+    &::after {
+      display: inline-block;
+      content: ' ';
+      position: absolute;
+      right: 5px;
+      top: 8px;
+      width: 0px;
+      height: 0px;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #757575;
+    }
+  }
+
+  &__dd-btn-show > &__dd-btn {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__arrow {
+    margin: 0 10px;
+    fill: #757575;
+  }
+  &__dd-list {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+    transition: opacity .3s linear;
+    a {
+      display: block;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.1px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #c7c7c7;
+      padding: 10px 20px 10px 10px;
+      &:hover {
+        background-color: #eeeeee;
+        color: $font-grey;
+      }
+    }
+  }
+  &__dd-btn-show > &__dd-list {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.header {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 5;
+  &__container {
+    min-height: 80px;
+    align-items: center;
+  }
+
+  &__logo {
+    align-self: stretch;
+    display: flex;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+  &__social-plus-menu {
+    display: flex;
+    align-items: center;
+  }
+  &__follow {
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3b4549;
+    &:after {
+      content: ' ';
+      width: 95px;
+      height: 1px;
+      border-top: 1px solid #e3e4e4;
+      display: inline-block;
+      margin: 0 20px;
+      vertical-align: middle;
+    }
+  }
+
+  &__menu-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 52px;
+    width: 52px;
+    background-image: url('/assets/icons/menu-icon.svg');
+    background-position: 50% 50%;
+    margin-left: 20px;
+  }
+  
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__home-icon {
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &__breadcrumbs {
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+
+    &:before {
+      content: ' ';
+      height: 20px;
+      width: 1px;
+      border-left: 1px solid $font-grey;
+      display: block;
+      margin: 0 15px;
+    }
+  }
+
+  @include breakpoints(to1199) {
+    &__follow {
+      display: none;
+    }
+  }
+
+  @include breakpoints(to991) {
+    &__nav {
+      display: none;
+    }
+  }
+  @include breakpoints(to767) {
+    &__container {
+      justify-content: space-between;
+    }
+    &__social-icon {
+      display: none;
+    }
+  }
+
+  .icon-svg {
+    fill: #b2b2b2;
+  }
+  .fb-icon:hover .icon-svg {
+    fill: #4267b2;
+  }
+  .twitter-icon:hover .icon-svg {
+    fill: #1da1f2;
+  }
+  .linkedin-icon:hover {
+    svg {
+      background-color: rgb(0, 119, 181);
+    }
+    .icon-svg {
+      fill: #fff;
+    }
+  }
+  .linkedin-icon {
+    svg {
+      margin: 11px;
+      border-radius: 3px;
+    }
+  }
+}
