@@ -92,12 +92,11 @@ $pink: #e96099;
     color: $pink;
     position: relative;
     cursor: initial;
-    &:focus {
-      outline: none;
-    }
+
     .collapse-icon {
       display: none;
     }
+
   }
   &__text {
     font-size: 18px;
@@ -163,9 +162,6 @@ $pink: #e96099;
       padding: 10px 40px 5px 10px;
       &:hover {
         background-color: $bg-grey;
-      }
-      &:focus {
-        outline: -webkit-focus-ring-color auto 5px;
       }
       .collapse-icon {
         position: absolute;
