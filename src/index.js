@@ -13,9 +13,11 @@ $(document).ready(() => {
   dropDownInit();
   toggleCollapse();
   initProjectSlider();
-  initModelsSlider();
   initMenuBtn();
   initToolsBtns();
+  initScrollBtns();
+  setModelsHeight();
+  $(window).resize(debounce(setModelsHeight, 150));
 });
 
 function scrollBtnInit() {
@@ -155,6 +157,8 @@ function initToolsBtns() {
     setTimeout(() => { 
       fullscreen.css('opacity', 1);
     }, 0);
+    $('.gallery-container').css('display', 'none');
+
     slider = $('.fullscreen__slider').slick({
       infinite: false,
       slidesToShow: 1,
@@ -174,7 +178,8 @@ function initToolsBtns() {
   });
   $('.fullscreen__close-btn').click(() => {
     fullscreen.css('opacity', 0)
-
+    $('.gallery-container').css('display', 'flex');
+    
     setTimeout(() => {
       fullscreen.css('display', 'none');
       slider.slick('unslick');
@@ -182,19 +187,60 @@ function initToolsBtns() {
   });
 }
 function initMenuBtn() {
-  const menu = $('.mobile-menu')
+  const menu = $('.mobile-menu');
+  let wasFullscreen = false;
   $('.header__menu-btn').click(() => {
     menu.css('display', 'flex')
     setTimeout(() => { 
       menu.css('opacity', 1);
     }, 0);
+    $('.gallery-container').css('display', 'none');
+    $('.header').css('display', 'none');
+
+    if ($('.fullscreen').css('display') === 'flex') {
+      wasFullscreen = true;
+      $('.fullscreen').css('display', 'none');
+    } else {
+      wasFullscreen = false;
+    }
   });
 
   $('.mobile-menu__close-btn').click(() => {
-    menu.css('opacity', 0)
+    menu.css('opacity', 0);
+    $('.header').css('display', 'block');
+    $('.gallery-container').css('display', 'flex');
 
+    if (wasFullscreen) {
+      $('.fullscreen').css('display', 'flex');
+    }
+    
     setTimeout(() => {
       menu.css('display', 'none');
     }, 300);
   });
+}
+
+function initScrollBtns() {
+  $('.models__scroll-down').click(() => {
+    const container = $('.models__container');
+    const itemHeight = window.innerWidth < 1600 ? 100 : 150;
+    const top = container.scrollTop();
+    container.animate({
+      scrollTop: top - (top % itemHeight) + itemHeight
+    }, 300);
+  });
+  $('.models__scroll-up').click(() => {
+    const itemHeight = window.innerWidth < 1600 ? 100 : 150;
+    const container = $('.models__container');
+    const top = container.scrollTop();
+    container.animate({
+      scrollTop: top - (top % itemHeight || itemHeight)
+    }, 300);
+  });
+}
+
+function setModelsHeight() {
+  const itemHeight = window.innerWidth < 1600 ? 100 : 150;
+  const modelsHeight = window.innerHeight - 186;
+  $('.models__container').height(modelsHeight - (modelsHeight % itemHeight));
 }
