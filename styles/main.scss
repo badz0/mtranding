@@ -5,6 +5,7 @@
 @import './mobile-menu.scss';
 @import './landing-page.scss';
 @import './gallery-page.scss';
+@import './projects.scss';
 
 $bg-grey: #f7f7f7;
 $font-grey: #4a4a4a;
@@ -18,7 +19,7 @@ body {
   position: relative;
 }
 
-:focus {
+button:focus, a:focus {
   outline: 1px solid rgb(227, 228, 228);
 }
 button {

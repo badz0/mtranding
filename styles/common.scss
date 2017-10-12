@@ -34,3 +34,22 @@ $font-light-grey: #9b9b9b;
     }
   }
 }
+
+.close-btn {
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #9b9b9b;
+  display: flex;
+  &:hover {
+    background-color: #eee;
+  }
+  svg {
+    stroke: #9b9b9b;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 3px;
+    width: 35px;
+    margin: auto;
+  }
+}

@@ -1,4 +1,5 @@
 import debounce from '../node_modules/lodash.debounce/index';
+import throttle from '../node_modules/lodash.throttle/index';
 
 $(document).ready(() => {
   AOS.init({
@@ -17,6 +18,7 @@ $(document).ready(() => {
   initToolsBtns();
   initScrollBtns();
   setModelsHeight();
+  selectModel();
   $(window).resize(debounce(setModelsHeight, 150));
 });
 
@@ -58,7 +60,7 @@ function dropDownInit() {
   });
 
   $(window).click((event) => {
-    if (!event.target.matches('.breadcrumbs__dd-btn')) {
+    if (!$(event.target).is('.breadcrumbs__dd-btn')) {
       $('.breadcrumbs__dd-btn-show').removeClass('breadcrumbs__dd-btn-show');
     }
   })
@@ -221,16 +223,29 @@ function initMenuBtn() {
 }
 
 function initScrollBtns() {
+  $('.models__container').scroll(debounce((event) => {
+    event.stopPropagation
+    const container = $(event.target);
+    const itemHeight = window.innerWidth < 1600 ? 100 : 160;
+    const top =  container.scrollTop();
+    const extra = top % itemHeight;
+    if (extra) {
+      container.animate({
+        scrollTop: extra < itemHeight / 2 ? top - extra : top + itemHeight - extra
+      }, 300);
+    }
+  }, 100));
+
   $('.models__scroll-down').click(() => {
     const container = $('.models__container');
-    const itemHeight = window.innerWidth < 1600 ? 100 : 150;
+    const itemHeight = window.innerWidth < 1600 ? 100 : 160;
     const top = container.scrollTop();
     container.animate({
       scrollTop: top - (top % itemHeight) + itemHeight
     }, 300);
   });
   $('.models__scroll-up').click(() => {
-    const itemHeight = window.innerWidth < 1600 ? 100 : 150;
+    const itemHeight = window.innerWidth < 1600 ? 100 : 160;
     const container = $('.models__container');
     const top = container.scrollTop();
     container.animate({
@@ -240,7 +255,15 @@ function initScrollBtns() {
 }
 
 function setModelsHeight() {
-  const itemHeight = window.innerWidth < 1600 ? 100 : 150;
+  const itemHeight = window.innerWidth < 1600 ? 100 : 160;
   const modelsHeight = window.innerHeight - 186;
   $('.models__container').height(modelsHeight - (modelsHeight % itemHeight));
+}
+
+function selectModel() {
+  $('.models__model').click((event) => {
+    console.log(111);
+    $('.models__model').removeClass('isSelected');
+    $(event.currentTarget ).addClass('isSelected');
+  });
 }
