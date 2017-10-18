@@ -58,7 +58,7 @@ $font-light-grey: #9b9b9b;
   margin-right: 20px;
   margin-bottom: 20px;
   min-height: 650px;
-  transition: background-color 1s;
+  transition: background-color .5s ease-out;
   position: relative;
   overflow: hidden;
   &:last-child {
@@ -68,26 +68,26 @@ $font-light-grey: #9b9b9b;
   &:hover {
     justify-content: flex-start;
     background-color: #182428;
-    transition: background-color 1s ease-out;
+    transition: background-color .5s ease-out;
 
     .project-card__img-wrapper {
       filter: invert(.85);
       transform: translate(-50%, -280px);
-      transition: filter 1s , transform 1s ease-out;
+      transition: filter .5s , transform .5s ease-out;
     }
     .project-card__desc {
       visibility: visible;
       transform: translateY(0);
       opacity: 1;
-      transition: visibility 1.5s ease-out, transform 1s ease-out, opacity 1.5s ease-out;
-      transition-delay: .2s;
+      transition: visibility 1s ease-out, transform .5s ease-out, opacity 1s ease-out;
+      transition-delay: .1s;
     }
     .project-card__btn {
       visibility: visible;
       transform: translateY(0);
       opacity: 1;
-      transition: visibility 1.5s ease-out, transform 1s ease-out, opacity 1.5s ease-out;
-      transition-delay: .4s;
+      transition: visibility 1s ease-out, transform .5s ease-out, opacity 1s ease-out;
+      transition-delay: .2s;
     }
   }
 
@@ -100,13 +100,11 @@ $font-light-grey: #9b9b9b;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition:  filter 1s ease-out, transform 1s ease-out .3s;
+    transition:  filter .5s ease-out, transform .5s ease-out .2s;
   }
   
   &__img {
     width: 100%;
-    transition: filter 1s ease-in-out;
-    transition-delay: .3s;
   }
 
   &__desc {
@@ -120,8 +118,8 @@ $font-light-grey: #9b9b9b;
     max-width: 100%;
     transform: translateY(200px);
     opacity: 0;
-    transition: visibility 1.5s, transform 1s ease-out, opacity 1.5s ease-in; 
-    transition-delay: .2s;
+    transition: visibility 1s ease-out, transform .5s ease-out, opacity 1s ease-out;
+    transition-delay: .1s;
   }
 
   &__btn {
@@ -135,8 +133,8 @@ $font-light-grey: #9b9b9b;
     color: #ffffff;
     padding: 12px 43px;
     transform: translateY(200px);
-    transition: visibility 1.5s, transform 1s ease-out, opacity 1.5s ease-in;
-    
+    transition: visibility 1s ease-out, transform .5s ease-out, opacity 1s ease-out;
+ 
     &:hover {
       background-color: #000;
     }
