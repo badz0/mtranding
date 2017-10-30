@@ -6,6 +6,8 @@ autoprefixer = require('gulp-autoprefixer'),
 source = require('vinyl-source-stream'),
 buffer = require('vinyl-buffer'),
 browserSync = require('browser-sync');
+rename = require('gulp-rename');
+cssmin = require('gulp-cssmin');
 
 /* pathConfig*/
 var entryPoint = './src/index.js',
@@ -37,13 +39,14 @@ return browserSync(config);
 
 gulp.task('sass', function () {
 return gulp.src(sassWatchPath)
-.pipe(sourcemaps.init())
 .pipe(sass().on('error', sass.logError))
 .pipe(autoprefixer({
     browsers: ['last 2 versions']
 }))
-.pipe(sourcemaps.write())
 .pipe(gulp.dest('./build/css'))
+.pipe(cssmin())
+.pipe(rename({ suffix: '.min' }))
+.pipe(gulp.dest('./build/css-min'))
 .pipe(browserSync.reload({stream: true}));
 });
 
