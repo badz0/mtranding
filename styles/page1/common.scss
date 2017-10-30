@@ -1,0 +1,87 @@
+.container {
+  margin: 0 20px;
+  max-width: 1160px;
+  text-align: center;
+  
+  @media only screen and (min-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.title {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 46px;
+  text-align: center;
+  margin: 0;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 56px;
+  }
+}
+
+.subtitle {
+  color: #424559;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  
+  @media only screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.text {
+  color: #6A6D81;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 13px 30px 17px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  display: inline-block;
+
+  &--pink {
+    background-color: #D7559F;
+    &:hover {
+      background: #c14d8f;
+    }
+  }
+  &--violet {
+    background-color: #8e44ad;
+    &:hover {
+      background: #703688;
+    }
+  }
+  &--shadowed {
+    box-shadow: 0 2px 20px 0 rgba(133,67,153,0.3), 0 2px 20px 0 rgba(0,0,0,0.3);
+  }
+}
+
+.scroll-icon {
+  margin-right: auto;
+  margin-left: auto;
+  width: 18px;
+  height: 55px;
+  background-image: url('../../../assets/icons/icon-mouse.svg');
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

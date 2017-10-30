@@ -1,0 +1,14 @@
+.footer {
+  background-color: #fff;
+  padding: 27px 0;
+  
+  &__logo-link {
+    display: block;
+    margin: auto;
+    width: 133px;
+  }
+
+  &__logo-img {
+    max-width: 100%;
+  }
+}

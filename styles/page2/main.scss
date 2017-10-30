@@ -1,0 +1,24 @@
+@import '../normalize.scss';
+@import './common.scss';
+@import './top-section.scss';
+@import './desc-section.scss';
+@import './in-addition-section.scss';
+@import './why-section.scss';
+@import './be-partner-section.scss';
+@import './footer.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

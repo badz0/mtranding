@@ -1,0 +1,43 @@
+.in-addition-section {
+  background-image: url('../../../assets/images/in-addition-section-bg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0 40px;
+
+  &__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &__text {
+    color: #FFFFFF;
+    font-size: 21px;
+    line-height: 34px;
+    margin: 20px 0 320px;
+  }
+  @media only screen and (min-width: 480px) {
+    background-image: url('../../../assets/images/in-addition-section-bg-mobile@2x.png');
+  }
+
+  @media only screen and (min-width: 768px) {
+    background-image: url('../../../assets/images/in-addition-section-bg.png');
+    padding-top: 140px;
+
+    
+    &__title {
+      max-width: 660px;
+      margin: auto;
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &__text {
+      margin: 20px auto 328px;
+      max-width: 760px;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    background-image: url('../../../assets/images/in-addition-section-bg@2x.png')
+  }
+}

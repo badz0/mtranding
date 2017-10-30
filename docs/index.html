@@ -5,206 +5,224 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./build/css/main.css">
-  <link rel="stylesheet" href="./aos.css">
-  <link rel="stylesheet" href="./slick.css">
+  <title>MTRADING</title>
+  <link rel="stylesheet" href="./build/css/page2/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__container container">
-      <nav class="header__nav">
-        <a href="./landing.html" class="header__home-icon"><img src="./assets/icons/home-icon.svg" alt="Home icon"></a>
-        <ul class="header__breadcrumbs breadcrumbs">
-          <li>
-            <button class="breadcrumbs__dd-btn" aria-label="Dropdown menu button">3D Services</button>
-            <ul class="breadcrumbs__dd-list">
-              <li><a href="/">Clothes</a></li>
-              <li><a href="/">Interior</a></li>
-              <li><a href="/">Characters</a></li>
-              <li><a href="/">Animations</a></li>
-            </ul>
-          </li>
-          <svg width="24px" height="24px" class="breadcrumbs__arrow" aria-label="Breadcrumbs arrow icon">
-            <polygon points="10 6 8.59 7.41 13.17 12 8.59 16.59 10 18 16 12"></polygon>
-          </svg>
-          <li>
-            <button class="breadcrumbs__dd-btn" aria-label="Dropdown menu button">Jewelry</button>
-            <ul class="breadcrumbs__dd-list">
-              <li><a href="/">Clothes</a></li>
-              <li><a href="/">Interior</a></li>
-              <li><a href="/">Characters</a></li>
-              <li><a href="/">Animations</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+  <section class="top-section">
+    <div class="flex-container-wrapper">
 
-      <a href="./gallery.html" class="header__logo" id="top-anchor"><img src="./assets/icons/devabit-logo.svg" alt="Logotype"></a>
-
-      <div class="header__social-plus-menu">
-        <span class="header__follow">Follow us</span>
-        <a href="/" class="header__social-icon fb-icon">
-          <svg width="36px" height="44px" aria-label="Facebook icon">
-            <path class="icon-svg" transform="translate(-1332.000000, -18.000000)" d="M1346.242,40.522 L1347.887,40.522 L1347.887,47.742 C1347.887,47.885 1347.995,48 1348.129,48 L1350.916,48 C1351.05,48 1351.158,47.885 1351.158,47.742 L1351.158,40.556 L1353.049,40.556 C1353.172,40.556 1353.274,40.457 1353.289,40.327 L1353.576,37.669 C1353.584,37.596 1353.562,37.522 1353.516,37.468 C1353.471,37.413 1353.404,37.381 1353.336,37.381 L1351.158,37.381 L1351.158,35.715 C1351.158,35.213 1351.412,34.958 1351.912,34.958 L1353.336,34.958 C1353.469,34.958 1353.577,34.843 1353.577,34.7 L1353.577,32.26 C1353.577,32.118 1353.469,32.002 1353.336,32.002 L1351.374,32.002 C1351.359,32.001 1351.329,32 1351.284,32 C1350.943,32 1349.761,32.071 1348.825,32.988 C1347.79,34.005 1347.933,35.222 1347.969,35.433 L1347.969,37.381 L1346.242,37.381 C1346.108,37.381 1346,37.497 1346,37.64 L1346,40.264 C1346,40.406 1346.108,40.522 1346.242,40.522"></path>
-          </svg>
-        </a>
-        <a href="" class="header__social-icon linkedin-icon">
-          <svg width="23px" height="23px" aria-label="Linkedin icon">
-            <g transform="translate(3, 3)" class="icon-svg">
-              <path d="M4.253,5 L1.242,5 C1.108,5 1,5.115 1,5.258 L1,15.577 C1,15.72 1.108,15.835 1.242,15.835 L4.253,15.835 C4.387,15.835 4.495,15.72 4.495,15.577 L4.495,5.258 C4.495,5.115 4.387,5 4.253,5"></path>
-              <path transform="translate(0.5, 0)" d="M1.987,0 C0.891,0 0,0.95 0,2.117 C0,3.285 0.891,4.235 1.987,4.235 C3.082,4.235 3.972,3.285 3.972,2.117 C3.972,0.95 3.082,0 1.987,0"></path>
-              <path d="M12.014,5 C10.804,5 9.91,5.555 9.368,6.185 L9.368,5.515 C9.368,5.372 9.259,5.256 9.126,5.256 L6.243,5.256 C6.109,5.256 6,5.372 6,5.515 L6,15.833 C6,15.976 6.109,16.091 6.243,16.091 L9.246,16.091 C9.38,16.091 9.489,15.976 9.489,15.833 L9.489,10.728 C9.489,9.007 9.927,8.337 11.051,8.337 C12.276,8.337 12.373,9.412 12.373,10.816 L12.373,15.833 C12.373,15.976 12.482,16.091 12.615,16.091 L15.62,16.091 C15.754,16.091 15.863,15.976 15.863,15.833 L15.863,10.173 C15.863,7.615 15.406,5 12.014,5"></path>
-            </g>
-          </svg>
-        </a>
-        <a href="/" class="header__social-icon twitter-icon">
-          <svg width="43px" height="42px" aria-label="Twitter icon">
-            <g transform="translate(-1402, -18.5)">
-              <path class="icon-svg" d="M1430.66024,35.512 C1430.42524,35.623 1430.18224,35.718 1429.93424,35.794 C1430.22724,35.44 1430.45124,35.024 1430.58824,34.569 C1430.61824,34.467 1430.58724,34.355 1430.50824,34.288 C1430.43024,34.222 1430.32024,34.214 1430.23424,34.268 C1429.70824,34.601 1429.14024,34.84 1428.54624,34.98 C1427.94724,34.355 1427.13424,34 1426.29224,34 C1424.51624,34 1423.07224,35.541 1423.07224,37.435 C1423.07224,37.584 1423.08124,37.732 1423.09824,37.878 C1420.89524,37.672 1418.84724,36.517 1417.44024,34.677 C1417.38924,34.611 1417.31224,34.575 1417.23424,34.582 C1417.15524,34.589 1417.08424,34.637 1417.04424,34.71 C1416.75924,35.232 1416.60724,35.829 1416.60724,36.437 C1416.60724,37.264 1416.88524,38.049 1417.37424,38.663 C1417.22524,38.608 1417.08124,38.539 1416.94224,38.458 C1416.86924,38.414 1416.77824,38.414 1416.70524,38.459 C1416.63224,38.505 1416.58624,38.587 1416.58424,38.678 C1416.58324,38.693 1416.58324,38.708 1416.58324,38.723 C1416.58324,39.959 1417.20624,41.071 1418.15924,41.677 C1418.07824,41.668 1417.99624,41.656 1417.91524,41.639 C1417.83124,41.622 1417.74424,41.654 1417.68824,41.721 C1417.63224,41.79 1417.61224,41.885 1417.63924,41.971 C1417.99124,43.146 1418.89924,44.01 1419.99724,44.274 C1419.08724,44.882 1418.04624,45.2 1416.95224,45.2 C1416.72424,45.2 1416.49524,45.186 1416.27024,45.158 C1416.15924,45.144 1416.05324,45.214 1416.01424,45.327 C1415.97624,45.44 1416.01624,45.566 1416.11124,45.632 C1417.51524,46.592 1419.13924,47.099 1420.80724,47.099 C1424.08624,47.099 1426.13724,45.45 1427.27924,44.067 C1428.70524,42.342 1429.52224,40.059 1429.52224,37.803 C1429.52224,37.709 1429.52124,37.614 1429.51824,37.519 C1430.08124,37.067 1430.56524,36.52 1430.95924,35.891 C1431.01924,35.796 1431.01324,35.67 1430.94324,35.582 C1430.87424,35.493 1430.75924,35.465 1430.66024,35.512"></path>
-            </g>
-          </svg>
+      <div class="top-section__container container">
+        <a href="/" aria-label="Logo link" class="top-section__logo-link">
+          <img src="./assets/icons/Logo.svg" alt="Logo image" class="top-section__logo-img">
         </a>
 
-        <button class="header__menu-btn" aria-label="Menu">
-            <svg width="52px" height="52px" viewBox="0 0 52 52">
-              <g id="UI_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <path d="M0,52 L52,52 L52,0 L0,0 L0,52 Z M0.285,51.714 L51.715,51.714 L51.715,0.284 L0.285,0.284 L0.285,51.714 Z" id="Fill-47" fill="#E3E4E4"></path>
-                <path d="M38.295,28 L13.5,28 C12.675,28 12,27.325 12,26.5 C12,25.675 12.675,25 13.5,25 L38.295,25 C39.12,25 39.795,25.675 39.795,26.5 C39.795,27.325 39.12,28 38.295,28" id="Fill-67" fill="#E65B47"></path>
-                <path d="M33.5,18 L13.5,18 C12.675,18 12,17.325 12,16.5 C12,15.675 12.675,15 13.5,15 L33.5,15 C34.325,15 35,15.675 35,16.5 C35,17.325 34.325,18 33.5,18" id="Fill-68" fill="#E65B47"></path>
-                <path d="M33.5,38 L13.5,38 C12.675,38 12,37.325 12,36.5 C12,35.675 12.675,35 13.5,35 L33.5,35 C34.325,35 35,35.675 35,36.5 C35,37.325 34.325,38 33.5,38" id="Fill-69" fill="#E65B47"></path>
-              </g>
-          </svg>
-        </button>
+        <div class="top-section__wrapper">
+
+          <div class="top-section__left-part">
+            <h1 class="top-section__title title">
+              Earn 75% revenue share from the clients that you refer to us!
+            </h1>
+            <p class="top-section__text">
+              This special offer is for limited time only - get started now.
+            </p>
+            <a href="/" class="top-section__btn btn btn--pink">Join Now</a>
+          </div>
+
+          <div class="top-section__right-part">
+            <img class="top-section__pie-chart" srcset="./assets/images/pie-chart.svg 1100w,
+          ./assets/images/pie-chart@2x.svg 1500w" sizes="(max-width: 1199px) 1100px, 1500px" src="./assets/images/pie-chart.svg"
+              alt="Client’s Spread Revenue pie chart">
+          </div>
+        </div>
+        <form name="be-partner-form" class="top-section__form be-partner-form">
+            <h3 class="be-partner-form__title">
+              Become MTrading Partner
+            </h3>
+            <p class="be-partner-form__text">
+              Fill out the simple form to become our partner
+            </p>
+            <label for="be-parner-firstname" class="visually-hidden">Firstname</label>
+            <input class="be-partner-form__input" type="text" name="firstname" id="be-parner-firstname" placeholder="Your firstname">
+
+            <label for="be-parner-lastname" class="visually-hidden">Lastname</label>
+            <input class="be-partner-form__input" type="text" name="lastname" id="be-parner-lastname" placeholder="Your lastname">
+
+            <label for="be-parner-email" class="visually-hidden">Email</label>
+            <input class="be-partner-form__input" type="email" name="email" id="be-parner-email" placeholder="Your email">
+
+            <div class="be-partner-form__terms">
+              <input class="be-partner-form__terms-checkbox" type="checkbox" name="terms" id="be-parner-terms">
+              <label class="be-partner-form__terms-label" for="be-parner-terms"></label>
+              <a href="/" class="be-partner-form__terms-link">Terms and Conditions</a>
+            </div>
+
+            <input class="be-partner-form__submit btn btn--violet btn--shadowed" type="submit" value="Become a partner">
+          </form>
+
       </div>
-    </div>
-  </header>
-
-  <section class="our-projects">
-    <div class="our-projects__container container">
-      <div class="our-projects__head">
-        <h1 class="our-projects__title">
-          Our projects
-        </h1>
-        <button class="our-projects__close-btn close-btn" aria-lable="Projects close button icon">
-          <svg viewbox="0 0 40 40">
-            <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30"></path>
-          </svg>
-        </button>
-      </div>
-
-      <div class="our-projects__wrapper">
-
-        <div class="our-projects__project-card project-card">
-          <div class="project-card__img-wrapper">
-            <img src="./assets/images/logos/1-casio-gray@3x.png" alt="Project image" class="project-card__img">
-          </div>
-          <p class="project-card__desc">
-            The HP Pavilion g6-1d46dx was a decent mainstream laptop in its day, and you could replace it with something very similar.
-            There have been lots of changes at the low end of the windows market, with touch-screen tablets and 2-in-1s,ainstream
-            laptops are thinner
-          </p>
-          <button class="project-card__btn">
-          Explore
-        </button>
-        </div>
-        <div class="our-projects__project-card project-card">
-          <div class="project-card__img-wrapper">
-            <img src="./assets/images/logos/2-shamballa-grey@3x.png" alt="Project image" class="project-card__img">
-          </div>
-          <p class="project-card__desc">
-            The HP Pavilion g6-1d46dx was a decent mainstream laptop in its day, and you could replace it with something very similar.
-            There have been lots of changes at the low end of the windows market, with touch-screen tablets and 2-in-1s,ainstream
-            laptops are thinner
-          </p>
-          <button class="project-card__btn">
-          Explore
-        </button>
-        </div>
-        <div class="our-projects__project-card project-card">
-          <div class="project-card__img-wrapper">
-            <img src="./assets/images/logos/3-pair-of-gray@3x.png" alt="Project image" class="project-card__img">
-          </div>
-          <p class="project-card__desc">
-            The HP Pavilion g6-1d46dx was a decent mainstream laptop in its day, and you could replace it with something very similar.
-            There have been lots of changes at the low end of the windows market, with touch-screen tablets and 2-in-1s,ainstream
-            laptops are thinner
-          </p>
-          <button class="project-card__btn">
-          Explore
-        </button>
-        </div>
-        <div class="our-projects__project-card project-card last-child">
-          <div class="project-card__img-wrapper">
-            <img src="./assets/images/logos/8-carlsberg-gray@3x.png" alt="Project image" class="project-card__img">
-          </div>
-          <p class="project-card__desc">
-            The HP Pavilion g6-1d46dx was a decent mainstream laptop in its day, and you could replace it with something very similar.
-            There have been lots of changes at the low end of the windows market, with touch-screen tablets and 2-in-1s,ainstream
-            laptops are thinner
-          </p>
-          <button class="project-card__btn">
-          Explore
-        </button>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="mobile-menu">
-    <button class="mobile-menu__close-btn" aria-label="Close menu button">
-            <svg viewbox="0 0 40 40">
-              <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30"></path>
-            </svg>
-          </button>
-    <nav class="mobile-menu__nav">
-      <ul>
-        <li><a href="#" class="mobile-menu__nav-link">JEWELRY</a></li>
-        <li><a href="#" class="mobile-menu__nav-link">CLOTHES</a></li>
-        <li><a href="#" class="mobile-menu__nav-link">INTERIOR</a></li>
-        <li><a href="#" class="mobile-menu__nav-link">CHARACTERS</a></li>
-        <li><a href="#" class="mobile-menu__nav-link">Animations</a></li>
-        <li class="separate-line"><a href="#" class="mobile-menu__nav-link">GET IN TOUCH</a></li>
-        <li><a href="#" class="mobile-menu__nav-link">OUR CLIENTS</a></li>
-        <li><a href="#" class="mobile-menu__nav-link">ABOUT US</a></li>
-      </ul>
-    </nav>
-
-    <button class="mobile-menu__back-btn">
-            BACK TO HOME
-          </button>
-    <div class="mobile-menu__socials">
-      <a href="/" class="mobile-menu__social-link fb-icon">
-        <svg width="36px" height="44px" aria-label="Facebook icon">
-          <path class="icon-svg" transform="translate(-1332.000000, -18.000000)" d="M1346.242,40.522 L1347.887,40.522 L1347.887,47.742 C1347.887,47.885 1347.995,48 1348.129,48 L1350.916,48 C1351.05,48 1351.158,47.885 1351.158,47.742 L1351.158,40.556 L1353.049,40.556 C1353.172,40.556 1353.274,40.457 1353.289,40.327 L1353.576,37.669 C1353.584,37.596 1353.562,37.522 1353.516,37.468 C1353.471,37.413 1353.404,37.381 1353.336,37.381 L1351.158,37.381 L1351.158,35.715 C1351.158,35.213 1351.412,34.958 1351.912,34.958 L1353.336,34.958 C1353.469,34.958 1353.577,34.843 1353.577,34.7 L1353.577,32.26 C1353.577,32.118 1353.469,32.002 1353.336,32.002 L1351.374,32.002 C1351.359,32.001 1351.329,32 1351.284,32 C1350.943,32 1349.761,32.071 1348.825,32.988 C1347.79,34.005 1347.933,35.222 1347.969,35.433 L1347.969,37.381 L1346.242,37.381 C1346.108,37.381 1346,37.497 1346,37.64 L1346,40.264 C1346,40.406 1346.108,40.522 1346.242,40.522"></path>
-        </svg>
-      </a>
-      <a href="" class="mobile-menu__social-link linkedin-icon">
-        <svg width="23px" height="23px" aria-label="Linkedin icon">
-          <g transform="translate(3, 3)" class="icon-svg">
-            <path d="M4.253,5 L1.242,5 C1.108,5 1,5.115 1,5.258 L1,15.577 C1,15.72 1.108,15.835 1.242,15.835 L4.253,15.835 C4.387,15.835 4.495,15.72 4.495,15.577 L4.495,5.258 C4.495,5.115 4.387,5 4.253,5"></path>
-            <path transform="translate(0.5, 0)" d="M1.987,0 C0.891,0 0,0.95 0,2.117 C0,3.285 0.891,4.235 1.987,4.235 C3.082,4.235 3.972,3.285 3.972,2.117 C3.972,0.95 3.082,0 1.987,0"></path>
-            <path d="M12.014,5 C10.804,5 9.91,5.555 9.368,6.185 L9.368,5.515 C9.368,5.372 9.259,5.256 9.126,5.256 L6.243,5.256 C6.109,5.256 6,5.372 6,5.515 L6,15.833 C6,15.976 6.109,16.091 6.243,16.091 L9.246,16.091 C9.38,16.091 9.489,15.976 9.489,15.833 L9.489,10.728 C9.489,9.007 9.927,8.337 11.051,8.337 C12.276,8.337 12.373,9.412 12.373,10.816 L12.373,15.833 C12.373,15.976 12.482,16.091 12.615,16.091 L15.62,16.091 C15.754,16.091 15.863,15.976 15.863,15.833 L15.863,10.173 C15.863,7.615 15.406,5 12.014,5"></path>
-          </g>
-        </svg>
-      </a>
-      <a href="/" class="mobile-menu__social-link twitter-icon">
-        <svg width="43px" height="42px" aria-label="Twitter icon">
-          <g transform="translate(-1402, -18.5)">
-            <path class="icon-svg" d="M1430.66024,35.512 C1430.42524,35.623 1430.18224,35.718 1429.93424,35.794 C1430.22724,35.44 1430.45124,35.024 1430.58824,34.569 C1430.61824,34.467 1430.58724,34.355 1430.50824,34.288 C1430.43024,34.222 1430.32024,34.214 1430.23424,34.268 C1429.70824,34.601 1429.14024,34.84 1428.54624,34.98 C1427.94724,34.355 1427.13424,34 1426.29224,34 C1424.51624,34 1423.07224,35.541 1423.07224,37.435 C1423.07224,37.584 1423.08124,37.732 1423.09824,37.878 C1420.89524,37.672 1418.84724,36.517 1417.44024,34.677 C1417.38924,34.611 1417.31224,34.575 1417.23424,34.582 C1417.15524,34.589 1417.08424,34.637 1417.04424,34.71 C1416.75924,35.232 1416.60724,35.829 1416.60724,36.437 C1416.60724,37.264 1416.88524,38.049 1417.37424,38.663 C1417.22524,38.608 1417.08124,38.539 1416.94224,38.458 C1416.86924,38.414 1416.77824,38.414 1416.70524,38.459 C1416.63224,38.505 1416.58624,38.587 1416.58424,38.678 C1416.58324,38.693 1416.58324,38.708 1416.58324,38.723 C1416.58324,39.959 1417.20624,41.071 1418.15924,41.677 C1418.07824,41.668 1417.99624,41.656 1417.91524,41.639 C1417.83124,41.622 1417.74424,41.654 1417.68824,41.721 C1417.63224,41.79 1417.61224,41.885 1417.63924,41.971 C1417.99124,43.146 1418.89924,44.01 1419.99724,44.274 C1419.08724,44.882 1418.04624,45.2 1416.95224,45.2 C1416.72424,45.2 1416.49524,45.186 1416.27024,45.158 C1416.15924,45.144 1416.05324,45.214 1416.01424,45.327 C1415.97624,45.44 1416.01624,45.566 1416.11124,45.632 C1417.51524,46.592 1419.13924,47.099 1420.80724,47.099 C1424.08624,47.099 1426.13724,45.45 1427.27924,44.067 C1428.70524,42.342 1429.52224,40.059 1429.52224,37.803 C1429.52224,37.709 1429.52124,37.614 1429.51824,37.519 C1430.08124,37.067 1430.56524,36.52 1430.95924,35.891 C1431.01924,35.796 1431.01324,35.67 1430.94324,35.582 C1430.87424,35.493 1430.75924,35.465 1430.66024,35.512"></path>
-          </g>
-        </svg>
-      </a>
     </div>
   </section>
 
-  <script type="text/javascript" src="./jquery.min.js"></script>
-  <script type="text/javascript" src="./aos.js"></script>
-  <script type="text/javascript" src="./slick.min.js"></script>
+  <section class="desc-section">
+    <div class="desc-section__container container">
+      <h2 class="desc-section__subtitle subtitle">
+        How it Works?
+      </h2>
+
+      <img class="desc-section__how-it-works-img" src="./assets/images/how-it-works.png" alt="How it works image">
+
+      <h2 class="desc-section__subtitle subtitle">
+        How much can you earn?
+      </h2>
+      <div class="desc-section__texts">
+        <p class="desc-section__text text">
+          In reality, the sum in unlimited,but here is an an example of an IB who introduces 10 clients in a month. They all traded
+          30 lots of EUR/USD each (which is not much). Let’s assume the average spread was 1.5 pips.
+        </p>
+        <p class="desc-section__text text">
+          This means that they paid about 15$ for every lot traded. 10 clients x 30 lots = 300 lots. 300 lots x 15$ = 4500$ With our
+          current special offer, you would be receiving 75% revenue share, and as a result, receive 4500 x 75% = 3375$.
+        </p>
+        <p class="desc-section__text text">
+          The duration is Unlimited, as long as the clients keep trading, you keep earning. The more clients you bring, the more they
+          trade, the more you earn!
+        </p>
+      </div>
+
+      <a href="/" class="top-section__btn btn btn--violet btn--shadowed">Join Now</a>
+
+    </div>
+  </section>
+  <section class="in-addition-section">
+    <div class="in-addition-section__container container">
+      <h2 class="in-addition-section__title title">
+        In addition, extra 750$ every month for the best IB!
+      </h2>
+      <p class="in-addition-section__text">
+        Bring at least 10 clients a month, each with a minimum deposit of 100$ and you will be automatically enrolled.
+      </p>
+      <div class="in-addition-section__scroll-icon scroll-icon"></div>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="why-section__container container">
+      <h2 class="why-section__subtitle subtitle">
+        Why MTrading?
+      </h2>
+      <p class="why-section__text text">
+        In 2016, MTrading was recognised as a Best Broker by Forex EXPO. This award was granted in recognition of our excellent trading
+        conditions, wide range of products and our attention to customer care.
+      </p>
+      <img class="why-section__award-img" src="./assets/images/forex-expo-winner.png" alt="Forex expo winner award">
+      <h3 class="why-section__benefits-title">
+        For your Referrals
+      </h3>
+      <div class="why-section__benefits">
+        <div class="why-section__benefit benefit">
+          <div class="benefit__icon benefit__icon--clock"></div>
+          <h4 class="benefit__title">
+            Instant Registration
+          </h4>
+          <p class="benefit__desc">
+            Verify email and phone number and get started.
+          </p>
+        </div>
+        <div class="why-section__benefit benefit">
+          <div class="benefit__icon benefit__icon--book"></div>
+          <h4 class="benefit__title">
+            Free Education
+          </h4>
+          <p class="benefit__desc">
+            Weekly webinars, daily market updates and analytics.
+          </p>
+        </div>
+        <div class="why-section__benefit benefit">
+          <div class="benefit__icon benefit__icon--monitor"></div>
+          <h4 class="benefit__title">
+            Advanced Trading Tools
+          </h4>
+          <p class="benefit__desc">
+            MT4 Supreme Edition with over 60 additional custom indicators and EAs.
+          </p>
+        </div>
+      </div>
+      <h3 class="why-section__benefits-title">
+        For your Business
+      </h3>
+      <div class="why-section__benefits">
+        <div class="why-section__benefit benefit">
+          <div class="benefit__icon benefit__icon--headphones"></div>
+          <h4 class="benefit__title">
+            Personal Manager
+          </h4>
+          <p class="benefit__desc">
+            Any issues will be dealt swiftly
+          </p>
+        </div>
+        <div class="why-section__benefit benefit">
+          <div class="benefit__icon benefit__icon--pie"></div>
+          <h4 class="benefit__title">
+            Great Revenue Share
+          </h4>
+          <p class="benefit__desc">
+            Nobody else will offer you better conditions
+          </p>
+        </div>
+        <div class="why-section__benefit benefit">
+          <div class="benefit__icon benefit__icon--monitor-with-face"></div>
+          <h4 class="benefit__title">
+            Simple Partner Room
+          </h4>
+          <p class="benefit__desc">
+            Everything you need can be accessed in just a few clicks
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="be-partner-section">
+    <div class="be-partner-section__container container">
+      <div class="be-partner-section__wrapper">
+        <div class="be-partner-section__left-part">
+          <h1 class="be-partner-section__title title">
+            Earn 75% revenue share from the clients that you refer to us!
+          </h1>
+          <p class="be-partner-section__text">
+            Don’t let this opportunity pass you! Become a partner now
+          </p>
+        </div>
+        <div class="be-partner-section__right-part">
+
+          <form name="be-partner-form" class="be-partner-section__form be-partner-form">
+            <h3 class="be-partner-form__title">
+              Become MTrading Partner
+            </h3>
+            <p class="be-partner-form__text">
+              Fill out the simple form to become our partner
+            </p>
+
+            <label for="be-parner-email" class="visually-hidden">Email</label>
+            <input class="be-partner-form__input" type="email" name="email" id="be-parner-email" placeholder="Your email">
+
+            <input class="be-partner-form__submit btn btn--violet btn--shadowed" type="submit" value="Go!">
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="/" aria-label="Logo link" class="footer__logo-link">
+      <img src="./assets/icons/Logo-dark.png" alt="Logo image" class="footer__logo-img">
+    </a>
+  </footer>
   <script type="text/javascript" src="./build/bundle.js"></script>
 </body>
 
