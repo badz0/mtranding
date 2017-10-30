@@ -23,17 +23,30 @@
   @media only screen and (min-width: 768px) {
     background-image: url('../../../assets/images/in-addition-section-bg.png');
     padding-top: 140px;
+    box-sizing: border-box;
+    background-position: bottom;
+    display: flex;
 
-    
+    &__container {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: calc(100vh - 180px);
+    }
     &__title {
       max-width: 660px;
-      margin: auto;
       font-size: 40px;
       line-height: 50px;
     }
     &__text {
-      margin: 20px auto 328px;
+      margin: 20px auto;
       max-width: 760px;
+    }
+
+    &__scroll-icon {
+      margin-top: auto;
     }
   }
 
