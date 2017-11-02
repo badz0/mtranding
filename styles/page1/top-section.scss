@@ -33,9 +33,13 @@
     margin-bottom: 30px;
   }
 
-  &__pie-chart {
-    width: calc(100% + 40px);
+  &__pie-chart-small {
+    width: 300px;
+    height: 310px;
     margin: 0 -20px;
+  }
+  &__pie-chart {
+    display: none;
   }
 
   &__scroll-icon {
@@ -89,13 +93,25 @@
     }
 
     &__pie-chart {
-      width: 100%;
+      display: block;
       margin: 0;
       margin-top: -45px;
+      width: 350px;
+      height: 319px;
+    }
+    &__pie-chart-small {
+      display: none;
     }
     
     &__scroll-icon {
       margin-top: -30px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    &__pie-chart {
+      width: 565px;
+      height: 516px;
     }
   }
 

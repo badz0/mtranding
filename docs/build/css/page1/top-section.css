@@ -21,9 +21,12 @@
     margin: 20px 25px 40px; }
   .top-section__btn {
     margin-bottom: 30px; }
-  .top-section__pie-chart {
-    width: calc(100% + 40px);
+  .top-section__pie-chart-small {
+    width: 300px;
+    height: 310px;
     margin: 0 -20px; }
+  .top-section__pie-chart {
+    display: none; }
   .top-section__scroll-icon {
     max-height: 55px;
     margin-top: 20px; }
@@ -76,11 +79,19 @@
         margin: 20px 0 30px;
         width: 50%; }
       .top-section__pie-chart {
-        width: 100%;
+        display: block;
         margin: 0;
-        margin-top: -45px; }
+        margin-top: -45px;
+        width: 350px;
+        height: 319px; }
+      .top-section__pie-chart-small {
+        display: none; }
       .top-section__scroll-icon {
         margin-top: -30px; } }
+  @media only screen and (min-width: 1200px) {
+    .top-section__pie-chart {
+      width: 565px;
+      height: 516px; } }
   @media only screen and (min-width: 1600px) {
     .top-section {
       background-image: url("../../../assets/images/top-section-bg@2x.png"); } }
